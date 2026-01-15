@@ -1,0 +1,27 @@
+import java.util.*;
+2. class MyProgram {
+3. public static void main(String[] args){
+4. Rectangle r1=new Rectangle();
+5. Scanner sc=new Scanner(System.in);
+6. System.out.print("enter height:");
+7. r1.height=sc.nextFloat();
+8. System.out.print("enter width:");
+9. r1.width=sc.nextFloat();
+
+r1.calArea();
+
+11. } //main()
+12. }//class myProgram
+
+13. class Rectangle{
+14. float height;
+15. float width;
+16. public void calArea()
+
+{
+
+17. System.out.println(
+"Area="+height*width);
+
+18. } //calArea()
+19. } //class
