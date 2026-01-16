@@ -1,0 +1,14 @@
+class MyAccount{
+2. int accNo;
+3. double balance;
+4. MyAccount(){
+5. //default constructor
+6. }
+7. }//class
+
+8. class MyBank {
+9. public static void main(String[] args){
+10. MyAccount ma= new MyAccount();
+11. System.out.println("balance="+ma.balance);
+12. }//main()
+13. }//class
