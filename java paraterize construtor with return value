@@ -1,0 +1,28 @@
+class Cube {
+2. double width,height,depth;
+3. Cube(double w, double h, double d)
+4. { System.out.println("Constructing cube");
+15.
+
+5. width = w;
+6. height = h;
+7. depth = d;
+8. }//cube()
+9. double calVolume(){
+10. return width*height*depth;
+11. }//calVolume()
+12. }//class
+
+13. class MyMain{
+14. public static void
+main(String[] args){
+double vol;
+
+16. Cube c=new Cube(10,10,10);
+17. vol=c.calVolume();
+18. System.out.println("
+
+Volume="+vol);
+
+19. }
+20. }
