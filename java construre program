@@ -1,0 +1,8 @@
+class MyConst {
+2. public static void main(String[] args)
+
+{
+
+3. MyConst c=new MyConst();
+4. }
+5. }
