@@ -1,0 +1,18 @@
+class Cube {
+2. double width, height, depth;
+3.
+4. { System.out.println("
+Constructing cube");
+5. width = w;
+6. height = h;
+7. depth = d;
+8. }//Cube()
+9. }//class
+
+10. class MyMain{
+11. public static void
+main(String[] args){
+
+12. Cube c=new Cube(10,10,10);
+13.
+14. }
