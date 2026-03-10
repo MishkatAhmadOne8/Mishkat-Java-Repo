@@ -1,0 +1,34 @@
+import java.util.Scanner;
+class CricketPlayer{
+    String name;
+    int age;
+    String country;
+    
+    CricketPlayer(String n,String c,int a){
+        this.name = n;
+        this.country=c;
+        this.age=a;
+    }
+     void display(){
+         System.out.println("-------Player Details---------");
+         System.out.println("Name: "+name);
+         System.out.println("Country: "+country);
+         System.out.println("Age: "+age);
+     }
+}
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Name of the player: ");
+        String Name = sc.nextLine();
+        
+        System.out.print("Enter Country of the player: ");
+        String Country = sc.nextLine();
+        
+        System.out.print("Enter Age of the player: ");
+        int age = sc.nextInt();
+        
+        CricketPlayer CR = new CricketPlayer(Name,Country,age);
+        CR.display();
+    }
+}
