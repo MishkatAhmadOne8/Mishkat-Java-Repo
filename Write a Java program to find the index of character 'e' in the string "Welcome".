@@ -1,0 +1,12 @@
+public class Main
+{
+	public static void main(String[] args) {
+		String str = "Welcome";
+		int index = str.indexOf('e');
+		System.out.println("index of 'e' is: "+index);
+	
+	}
+}
+
+output:
+      index of 'e' is 1
