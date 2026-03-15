@@ -1,0 +1,22 @@
+class Employee {
+    String name;
+    double salary;
+
+    // 'this' distinguishes class variables from parameters
+    Employee(String name, double salary) {
+        this.name = name;     // this.name refers to the class variable
+        this.salary = salary; // this.salary refers to the class variable
+    }
+
+    void displayDetails() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Monthly Salary: " + salary);
+    }
+}
+
+public class Company {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee("Rahul", 50000.0);
+        emp1.displayDetails();
+    }
+}
