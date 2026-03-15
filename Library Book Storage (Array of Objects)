@@ -1,0 +1,32 @@
+class Book {
+    String title;
+    String author;
+    double price;
+
+    // Constructor to initialize book details
+    Book(String t, String a, double p) {
+        title = t;
+        author = a;
+        price = p;
+    }
+
+    void display() {
+        System.out.println("Title: " + title + ", Author: " + author + ", Price: " + price);
+    }
+}
+
+public class LibrarySystem {
+    public static void main(String[] args) {
+        // Creating an array to hold 2 Book objects
+        Book[] library = new Book[2];
+
+        // Initializing array elements with Book objects
+        library[0] = new Book("Java Basics", "John Doe", 450.0);
+        library[1] = new Book("Python Pro", "Jane Smith", 550.0);
+
+        // Displaying details using a loop
+        for (Book b : library) {
+            b.display();
+        }
+    }
+}
