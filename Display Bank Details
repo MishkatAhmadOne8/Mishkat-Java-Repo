@@ -1,0 +1,60 @@
+import java.util.Scanner;
+class Account{
+    int acc_no;
+    String name;
+    double amount;
+    Account(int acc_no,String name,double amount){
+        this.acc_no=acc_no;
+        this.name = name;
+        this.amount= amount;
+    }
+    String deposit( double amt){
+        if(amt<0){
+            return "Invalid amount entered";
+        }
+        else{
+            amount +=amt ;
+            return "Amount deposit succefully";
+        }
+    }
+    String Widtdraw(double amt){
+        if(amt>amount){
+            return "Widtdraw valid amount";
+        }else if(amt<=0){
+            return "Invalid amount entered";
+        }else{
+            amount -=amt;
+            return "Widtdraw succefully done";
+        }
+    }
+    double displat_amt(){
+        return amount;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Account obj = new Account(101, "Mishkat", 6900);
+        
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Enter choice (1-Deposit, 2-Withdraw): ");
+            int choice = sc.nextInt();
+            String result = "";
+
+            if (choice == 1) {
+                System.out.print("Enter amount to deposit: ");
+                double amt = sc.nextDouble(); // Get the amount from user
+                result = obj.deposit(amt);
+            } else if (choice == 2) {
+                System.out.print("Enter amount to withdraw: ");
+                double amt = sc.nextDouble(); // Get the amount from user
+                result = obj.Widtdraw(amt);
+            } else {
+                result = "Invalid choice";
+            }
+            
+            System.out.println(result + " | Balance: " + obj.displat_amt());
+        }
+        sc.close();
+    }
+}
