@@ -1,0 +1,14 @@
+class BankApplication {
+    void processTransaction() throws Exception {
+        // Simulating logic
+        throw new Exception();
+    }
+    public static void main(String[] args) {
+        try {
+            new BankApplication().processTransaction();
+            System.out.println("Transaction processed");
+        } catch (Exception e) {
+            System.out.println("Exception handled in main");
+        }
+    }
+}
