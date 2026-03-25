@@ -1,0 +1,4 @@
+class ThreadPrioritySystem extends Thread {
+    public void run() { System.out.println(getName() + " executing"); }
+}
+// Usage: t1.setPriority(Thread.MAX_PRIORITY);
