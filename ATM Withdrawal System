@@ -1,0 +1,10 @@
+class ATMWithdrawal {
+    public void withdraw(double balance, double amount) {
+        try {
+            if (amount > balance) throw new Exception("Insufficient Balance");
+            System.out.println("Withdrawal successful. Remaining balance: " + (balance - amount));
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
