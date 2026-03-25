@@ -1,0 +1,5 @@
+class DownloadManager implements Runnable {
+    String file;
+    DownloadManager(String f) { this.file = f; }
+    public void run() { System.out.println("Downloading " + file + "..."); }
+}
