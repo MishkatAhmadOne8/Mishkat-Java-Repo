@@ -1,0 +1,9 @@
+class BankingSystem {
+    int balance = 1000;
+    void withdraw(int amt) {
+        synchronized(this) {
+            balance -= amt;
+            System.out.println("Deducted: " + amt + " | Balance: " + balance);
+        }
+    }
+}
